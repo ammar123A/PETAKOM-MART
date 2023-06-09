@@ -14,5 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Mainpage');
 });
+
+Route::get
+('/add', function () {
+    return view('Manage_Vendor.Admin_addvendorTable');
+});
+
+Route::post('/add/create','App\Http\Controllers\Vendor_Controller@create');
+
+Route::get('/vendor/{id}/edit','App\Http\Controllers\Vendor_Controller@read');
+
+Route::get('/vendor/{id}/delete/page','App\Http\Controllers\Vendor_Controller@readd');
+
+Route::get('/vendor','App\Http\Controllers\Vendor_Controller@index');
+
+Route::get('/vendor/{id}/delete','App\Http\Controllers\Vendor_Controller@destroy');
+
+
+
