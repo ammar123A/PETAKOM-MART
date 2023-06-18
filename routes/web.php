@@ -33,4 +33,16 @@ Route::get('/vendor','App\Http\Controllers\Vendor_Controller@index');
 Route::get('/vendor/{id}/delete','App\Http\Controllers\Vendor_Controller@destroy');
 
 
+Route::get('/Add', function () {
+    return view('/Manage_Inventory.Admin_AddInventory');
+});
 
+Route::get('/datainventory', 'App\Http\Controllers\InventoryController@index');
+
+Route::post('/datainventory/create', 'App\Http\Controllers\InventoryController@create');
+
+Route::get('/datainventory/{id}/edit', 'App\Http\Controllers\InventoryController@edit');
+
+Route::post('/datainventory/{id}/update', 'App\Http\Controllers\InventoryController@update');
+
+Route::get('/datainventory/{id}/delete', 'App\Http\Controllers\InventoryController@delete');

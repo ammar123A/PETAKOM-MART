@@ -58,8 +58,8 @@
 
             <nav id="navbar" class="nav-menu navbar">
                 <ul>
-                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-box"></i> <span>Inventory</span></a></li>
+                    <li><a href="/" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+                    <li><a href="/datainventory" class="nav-link scrollto"><i class="bx bx-box"></i> <span>Inventory</span></a></li>
                     <li><a href="/vendor" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Vendor</span></a></li>
                     <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Sales</span></a></li>
                     <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Schedule</span></a></li>
